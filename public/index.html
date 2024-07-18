@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ: Perguntas e Respostas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="corpo">
+        <div class="topo">
+            <h1>QUIZ</h1>
+        </div>
+        <div class="conteudo-principal">
+            <div class="pergunta">
+                <p id="QUIZpergunta">pergunta</p>
+            </div>
+            <input type="text" name="resposta" id="InputResposta">
+            <div class="resultado">
+                <p id="AcertouErrou">resposta</p>
+            </div>
+        </div>
+        <p class="iniciar" id="iniciar" onclick="iniciarQUIZ()">iniciar</p>
+    </div>
+
+    <!-- Modal de finalização -->
+    <div id="meuModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="loading" class="loading">
+                <iframe src="https://giphy.com/embed/sSgvbe1m3n93G" width="480" height="480" style="width: 100%; height: auto; max-width: 300px; max-height: 300px; display: block; margin: auto;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </div>
+            <p id="paragrafo" class="hidden">...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
